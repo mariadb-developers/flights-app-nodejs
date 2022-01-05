@@ -23,12 +23,12 @@ This README will walk you through the steps for getting the `Flights` web applic
 1. [Requirements](#requirements)
 2. [Getting started with MariaDB ColumnStore](#mariadb)
 3. [Get the code](#code)
-3. [Configure, build and run the app](#app)
+4. [Configure, build and run the app](#app)
     1. [Configure](#configure-app)
-    2. [Build and run the API app](#build-run-api)
+    2. [Build and run the Node.js API app](#build-run-api)
     3. [Build and run the Client app](#build-run-client)
-4. [Support and contribution](#support-contribution)
-5. [License](#license)
+5. [Support and contribution](#support-contribution)
+6. [License](#license)
 
 ## Requirements <a name="requirements"></a>
 
@@ -105,7 +105,7 @@ const pool = mariadb.createPool({
 });
 ```
 
-### b.) Build and run the app <a name="build-run-api"></a>
+### b.) Build and run the Node.js API app <a name="build-run-api"></a>
 
 To start and run the API application you need to execute the following commands within the [api root folder](src/api).
 
@@ -121,23 +121,11 @@ $ npm install
 $ npm start
 ``` 
 
-### c.) Build and run the [UI (Client) app](src/client) <a name="build-run-client"></a>
+### c.) Build and run the [UI (Client) app](https://github.com/mariadb-developers/flights-app-client) <a name="build-run-client"></a>
 
-Once the API project is running you can now communicate with the exposed endpoints directly (via HTTP requests) or with the application UI, which is contained with the [client](src/client) folder of this repo.
+Once the API project is running you can now communicate with the exposed endpoints directly (via HTTP requests) or with the application UI, which is contained with the `client` folder of this repo.
 
-To start and run the API application you need to execute the following commands within the [client root folder](src/client).
-
-1. Install the Node.js packages (dependendies) for the app.
-
-```bash
-$ npm install
-```
-
-2. Run the the app, which will be available via a browser at http://localhost:3000.
-
-```bash 
-$ npm start
-``` 
+To start the `client` application follow the instructions [here](https://github.com/mariadb-developers/flights-app-client).
 
 ## Support and Contribution <a name="support-contribution"></a>
 
